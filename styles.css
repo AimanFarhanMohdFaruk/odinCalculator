@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    line-height: 1.6;
+}
+
+
+footer {
+    margin-top: auto; min-height:50px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+}
+
+.calculatorBox {
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 1.5rem;
+    background: lightgray;
+    padding: 1rem;
+}
+
+
+.display {
+    border: 2px solid black;
+    border-radius: 1rem;
+    background-color: lightgoldenrodyellow;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.currentOperation {
+    min-height: 35px;
+    font-size: 20px;
+}
+
+
+.lastOperation {
+    min-height: 35px;
+    font-size: 20px;
+}
+
+.buttonsGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    margin: 2rem 0;
+}
+
+button {
+    font-family: "Outfit";
+    min-height: 55px;
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    cursor:pointer;
+
+}
+
+.btn {
+}
+
+.clear-btn {
+    grid-column: span 2;
+    background: lightskyblue;
+    transition-duration: 0.4s;
+}
+
+.clear-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.delete-btn {
+    grid-column: span 2;
+    background: lightcoral;
+    transition-duration: 0.4s;
+}
+
+.delete-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
